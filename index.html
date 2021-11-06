@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <title>Tech-blog</title>
+  </head>
+  <body class="bg-yellow-100">
+    <header
+      class="bg-yellow-500 flex justify-between items-center text-yellow-900 font-serif"
+    >
+      <h1 class="text-3xl md:text-5xl lg:text-7xl m-2 p-1">Tech-Blog</h1>
+      <nav class="flex m-2">
+        <ul class="flex m-1 p-1">
+          <li class="text-2xl md:text-4xl m-2"><a>Home</a></li>
+          <li class="text-2xl md:text-4xl m-2"><a>Dashboard</a></li>
+        </ul>
+        <button
+          class="bg-yellow-200 rounded-lg text-1xl md:text-3xl p-1 m-2 hover:bg-yellow-700 hover:text-white"
+        >
+          <a>Login/SignUp</a>
+        </button>
+      </nav>
+    </header>
+    <!-- <main class="flex flex-col m-8 md:mx-14 lg:mx-20">
+      <section
+        class="m-4 bg-yellow-200 p-2 ring-8 ring-yellow-400 text-lg md:text-xl lg:text-3xl"
+      >
+        <div
+          class="flex justify-between bg-yellow-400 text-red-700 ring-8 ring-yellow-400 mb-4"
+        >
+          <h2 class="text-2xl md:text-4xl">Why is MVC important</h2>
+          <p class="font-sans text-red-700">posted by samira on 5/8/21</p>
+        </div>
+
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            ratione nobis quis nihil voluptatum reprehenderit in enim, facilis
+            quam, dolor repellat debitis reiciendis omnis, nesciunt eius?
+            Adipisci nobis cumque cum!
+          </p>
+        </div>
+      </section>
+      <section
+        class="m-4 bg-yellow-200 p-2 ring-8 ring-yellow-400 text-lg md:text-xl lg:text-3xl"
+      >
+        <div
+          class="flex justify-between bg-yellow-400 text-red-700 ring-8 ring-yellow-400 mb-4"
+        >
+          <h2 class="text-2xl md:text-4xl">Why is MVC important</h2>
+          <p class="font-sans text-red-700">posted by samira on 5/8/21</p>
+        </div>
+
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            ratione nobis quis nihil voluptatum reprehenderit in enim, facilis
+            quam, dolor repellat debitis reiciendis omnis, nesciunt eius?
+            Adipisci nobis cumque cum!
+          </p>
+        </div>
+      </section> -->
+
+      <div class="flex justify-center my-20 gap-5 text-2xl mr-4 p-4 md:text-3xl lg:text-4xl w-full text-yellow-900
+      ">
+     
+        <form class="flex flex-col  p-8 bg-yellow-200 rounded-xl   ring-4 ring-yellow-600 w-6/12">
+          <h3 class="mb-8">Login</h3>
+          <label 
+            >Email: <br />
+            <input type="email" class="mb-4 w-full"  required
+          /></label>
+          <label>Password:<br /><input type="password" class=" w-full" required /></label><br />
+          <button
+            class="self-start bg-yellow-500 p-2 hover:bg-yellow-700 hover:text-white rounded-lg "
+          >
+            Login
+          </button>
+        </form>
+        <form class="flex flex-col p-8 bg-yellow-200 rounded-xl ring-4 ring-yellow-600 w-6/12">
+          <h3 class="mb-8 ">Sign Up</h3>
+          <label
+            >Name: <br />
+            <input type="text" class="mb-4 w-full"  required
+          /></label>
+          <label
+            >Email: <br />
+            <input class="mb-4 w-full" type="email"  required
+          /></label>
+          <label>Password:<br /><input class="w-full" type="password"  required /></label><br />
+          <button
+            class="self-start bg-yellow-500 hover:bg-yellow-700 p-2 hover:text-white rounded-lg"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
