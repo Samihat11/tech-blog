@@ -1,24 +1,24 @@
 {{#if posts.length}}
   {{#each posts as |post|}}
     <section
-      class="m-4 bg-yellow-200 p-2 ring-8 ring-yellow-400 text-lg md:text-xl lg:text-3xl"
+      class='m-4 bg-yellow-200 p-2 ring-8 ring-yellow-400 text-lg md:text-xl lg:text-3xl'
     >
       <div
-        class="flex justify-between bg-yellow-400 text-red-700 ring-8 ring-yellow-400 align-middle mb-4"
+        class='flex justify-between bg-yellow-400 text-red-700 ring-8 ring-yellow-400 align-middle mb-4'
       >
-        <h2 class="text-lg md:text-xl lg:text-2xl">
-          <a href="/dashboard/post/{{post.id}}"> {{post.title}}</a></h2>
-        <p class="text-xs self-end md:text-sm font-sans">posted by Samira on
-          5/8/21</p>
+        <h2 class='text-lg md:text-xl lg:text-2xl'>
+          <a href='/post/{{post.id}}'> {{post.title}}</a></h2>
+        <p class='text-xs self-end md:text-sm font-sans'>posted by
+          {{post.user.name}}
+          on
+          {{format_date createdAt}}</p>
       </div>
       <div>
-        <p class="text-lg">
+        <p class='text-lg'>
           {{post.post_content}}
         </p>
       </div>
-
     </section>
   {{/each}}
 
-  <script src="/js/dashboard.js"></script>
 {{/if}}
