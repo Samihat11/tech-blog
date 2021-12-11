@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "build:css": "postcss public/css/tailwind.css -o public/css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/Samihat11/tech-blog#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.0",
     "bcrypt": "^5.0.1",
     "connect-session": "0.0.1",
     "connect-session-sequelize": "^7.1.2",
@@ -30,6 +32,9 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3-rc.0",
     "npm": "^8.1.3",
-    "sequelize": "^6.9.0"
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.1.0",
+    "sequelize": "^6.9.0",
+    "tailwindcss": "^3.0.1"
   }
 }
