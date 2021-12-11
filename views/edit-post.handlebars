@@ -1,0 +1,36 @@
+<div
+  class='flex flex-col sm:flex-row justify-center my-10 gap-5 text-2xl mr-4 p-4 md:text-3xl lg:text-4xl w-full text-yellow-900'
+>
+  <form
+    id='edit'
+    class='flex flex-col p-8 bg-yellow-200 rounded-xl ring-4 ring-yellow-600 w-full md:w-9/12'
+  >
+    <label>Post Title:
+      <br />
+      <input
+        id='post-title'
+        type='text'
+        value='{{post.title}}'
+        class='mb-4 w-full cursor-text'
+        required
+      />
+
+    </label>
+    <label>Post Body:
+      <br />
+      <textarea
+        id='content'
+        class='mb-4 w-full cursor-text'
+        required
+      >{{post.post_content}}</textarea>
+    </label>
+    <button
+      class='self-center bg-yellow-500 hover:bg-yellow-700 p-2 hover:text-white rounded-lg'
+      type='submit'
+    >
+      Update Post
+    </button>
+  </form>
+</div>
+
+<script src='/js/dashboard.js'></script>
