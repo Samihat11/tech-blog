@@ -17,21 +17,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/dashboard', withAuth, async (req, res) => {
-  try {
-    const postData = await Post.findAll({
-      where: { user_id: req.session.user_id },
-    });
-    const posts = postData.map((post) => post.get({ plain: true }));
-    res.render('dashboard', {
-      posts,
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -42,7 +27,6 @@ router.get('/post/:id', withAuth, async (req, res) => {
       return;
     }
     const post = postData.get({ plain: true });
-    console.log(post);
     res.render('post', { post, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
