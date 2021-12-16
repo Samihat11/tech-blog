@@ -11,7 +11,7 @@
         class="text-lg md:text-xl lg:text-2xl">
           <a href="/post/{{post.id}}"> {{post.title}}</a></h2>
         <p class="text-xs self-end md:text-sm font-sans">posted on
-          {{format_date createdAt}}
+          {{format_date post.createdAt}}
            
          <a href="/api/post/edit/{{post.id}}"><svg id="edit" class="w-5 inline-block ml-2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -31,12 +31,10 @@
         </p>
       </div>
     </section>
-     
-    
-  </div>
   {{/each}}
     <script src="/js/dashboard.js"></script>
 {{/if}}
+
 <section class="flex justify-center">
   <a href="/dashboard/new"
     class="bg-yellow-200 p-2 m-2 md-text-xl rounded-xl text-yellow-700 hover:bg-yellow-700 hover:text-white"
